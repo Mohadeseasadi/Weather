@@ -27,7 +27,7 @@ body{
 
 .heading{
     font-weight: bold;
-    font-size: 4rem;
+    font-size: 3rem;
     letter-spacing: .02em;
     padding: 0 0 30px 0;
 }
@@ -47,15 +47,19 @@ input {
 }
 
 .top-banner form input{
-    font-size: 2rem;
+    font-size: 1.5rem;
     height: 40px;
     padding: 5px 5px 10px;
     border-bottom: 1px solid;
 }
 
+.top-banner form input::placeholder {
+    color: #959494c5;
+}
+
 .top-banner form button {
     cursor: pointer;
-    font-size: 1rem;
+    font-size: .9rem;
     font-weight: bold;
     letter-spacing: .1em;
     padding: 15px 20px;
@@ -74,19 +78,35 @@ input {
     min-height: 40px;
 }
 
-.load-section{
+/* section 2 */
+
+.load-section {
+    margin: 70px 0 20px;
+}
+
+.load-section .cities {
+    display: grid;
+    grid-gap: 32px 20px;
+    grid-template-columns: repeat(4 , 1fr);
+}
+
+.load-section .city{
     position: relative;
     padding: 40px 10%;
     border-radius: 10px;
     background-color: #fff;
-    color: #4f4c4c;
 }
 
-.load-section .city::after{
-    width: 90%;
-    height: 50px;
-    position: absolute;
-    opacity: 0.3;
-    border-radius: 10px;
-    background-color: #fff;
+.load-section figcaption{
+    margin-top: 10px ;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+}
+
+.load-section .city-temp{
+    font-size: 5rem;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #1e212d;
+
 }
